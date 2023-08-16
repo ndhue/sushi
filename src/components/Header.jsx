@@ -6,11 +6,11 @@ export const Header = () => {
     <header>
       <nav className='header__nav'>
         <div className="header__logo">
-          <h4>SushiStore</h4>
+          <h4 data-aos="fade-down">SushiStore</h4>
           <div className="header__logo-overlay"></div>
         </div>
         {/* DESKTOP */}
-        <ul className='header__menu'>
+        <ul className='header__menu' data-aos="fade-down">
             <li>
               <a href='#menu'>Menu</a>
             </li>
@@ -27,7 +27,7 @@ export const Header = () => {
             </li>
           </ul>
           {/* MOBILE */}
-          <ul className='header__menu-mobile'>
+          <ul className='header__menu-mobile' data-aos="fade-down">
             <li>
               <img src={menuIcon} alt="menu" />
             </li>

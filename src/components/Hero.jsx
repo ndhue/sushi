@@ -7,8 +7,8 @@ export const Hero = () => {
   return (
     <section className='hero'>
         <div className="hero-image">
-          <img src={sushi} alt="sushi" />
-          <h2>
+          <img src={sushi} alt="sushi" data-aos="fade-up" />
+          <h2 data-aos="fade-up">
             日 <br />
             本 <br />
             食
@@ -16,7 +16,7 @@ export const Hero = () => {
           <div className="hero-image__overlay" />
         </div>
         <div className="hero-content">
-          <div className="hero-content-info">
+          <div className="hero-content-info" data-aos="fade-left">
             <h1>Feel the taste of Japanese food</h1>
             <p>Feel the taste of the most popular Japanese food from anywhere and anytime.</p>
 

@@ -12,11 +12,11 @@ import arrowRight from "../assets/arrow-right.svg"
 export const Popular = () => {
   return (
     <section className="popular-foods" id="menu">
-      <h2 className="popular-foods__title">
+      <h2 className="popular-foods__title" data-aos="flip-up">
         Popular Food / 人気
       </h2>
 
-      <div className="popular-foods__filters sushi__hide-scrollbar">
+      <div className="popular-foods__filters sushi__hide-scrollbar" data-aos="flip-up">
         <button className="popular-foods__filter-btn active">
           All
         </button>
@@ -41,7 +41,7 @@ export const Popular = () => {
         </button>
       </div>
 
-      <div className="popular-foods__catalogue">
+      <div className="popular-foods__catalogue" data-aos="fade-up">
         <article className="popular-foods__card">
           <img className="popular-foods__card-image" src={sushi12} alt="sushi-12" />
           <h4 className="popular-foods__card-title">

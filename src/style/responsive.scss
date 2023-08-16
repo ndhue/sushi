@@ -27,15 +27,15 @@
 
   .hero-content-info {
     padding: 32px;
-  }
 
-  .hero-content-info h1 {
-    font-size: 52px;
-  }
+    h1 {
+      font-size: 52px;
+    }
 
-  .hero-content-info p {
-    margin: 12px 0;
-    font-size: 16px;
+    p {
+      margin: 12px 0;
+      font-size: 16px;
+    }
   }
 
   .hero-content__buttons {
@@ -44,6 +44,15 @@
 
   .hero-content__testimonial {
     padding: 32px;
+    gap:0;
+  }
+
+  .hero-content__customer {
+    h4 {
+      font-size: 58px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
   }
 
   // ABOUT US
@@ -80,7 +89,46 @@
       }
     }
   }
-  
+
+  // TRENDING
+  .trending__image img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .trending__content {
+    padding: 32px;
+  }
+
+  // SUBSCRIPTION
+  .subscription {
+    padding: 64px 32px;
+
+    h2 {
+      font-size: 68px;
+      line-height: 100px;
+    }
+
+    &__form {
+      flex-direction: column;
+      gap: 20px;
+      min-width: 100%;
+      border-radius: 20px;
+      padding: 0;
+      border: none;
+
+      input {
+        min-height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 10px 20px;
+        border-radius: 30px;
+      }
+    
+      button {
+        min-width: 100%;
+      }
+    }
+  }
 }
 
 @include responsive_s750() {
@@ -107,6 +155,16 @@
     }
   }
   
+  // POPULAR
+  .popular {
+    &-foods {
+      padding: 64px 32px;
+    }
+  
+    &-foods__card, &-foods__card.active-card {
+      min-width: 100%;
+    }
+  }
 }
 
 @include responsive_s900() {
@@ -114,6 +172,21 @@
 }
 
 @include responsive_s1024() {
+  
+
+  // TRENDING
+  
+}
+
+@include responsive_s1024only() {
+  .sushi__title {
+    font-size: 52px;
+  }
+
+  .sushi__description {
+    margin: 0;
+  }
+  
   // ABOUT US
   .about-us {
     flex-direction: column;
@@ -131,6 +204,44 @@
   .about-us__button {
     display: none;
   }
+  // TRENDING
+  .trending {
+    &-sushi {
+      flex-direction: column;
+    }
+
+    &-drinks {
+    flex-direction: column-reverse;
+    }
+
+    &__list {
+      gap: 0;
+    }
+    &__image {
+    width: 100%;
+    background-size: cover;
+    }
+
+    &__discover {
+    display: none;
+    }
+
+    &__arrow {
+    display: none;
+    }
+  }
+
+  // SUBSCRIPTION
+  .subscription {
+    padding: 48px;
+    h2 {
+      font-size: 72px;
+      line-height: 86px;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
 }
 
 @include responsive_s1060() {
@@ -142,4 +253,5 @@
       transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
     }
   }
+
 }

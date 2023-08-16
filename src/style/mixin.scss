@@ -5,6 +5,13 @@ $s1024: "only screen and (min-width: 901px) and (max-width: 1024px)";
 $s1060: "only screen and (max-width: 1060px)";
 
 $rsHeader: "only screen and (max-width: 900px)";
+$s1024only: "only screen and (max-width: 1024px)";
+
+@mixin responsive_s1024only() {
+  @media #{$s1024only} {
+      @content;
+  }
+}
 
 @mixin responsive_rsHeader() {
   @media #{$rsHeader} {
