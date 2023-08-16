@@ -1,0 +1,43 @@
+$s550: "only screen and (max-width: 550px)";
+$s750: "only screen and (min-width: 551px) and (max-width: 750px)";
+$s900: "only screen and (min-width: 751px) and (max-width: 900px)";
+$s1024: "only screen and (min-width: 901px) and (max-width: 1024px)";
+$s1060: "only screen and (max-width: 1060px)";
+
+$rsHeader: "only screen and (max-width: 900px)";
+
+@mixin responsive_rsHeader() {
+  @media #{$rsHeader} {
+      @content;
+  }
+}
+
+@mixin responsive_s550() {
+  @media #{$s550} {
+      @content;
+  }
+}
+
+@mixin responsive_s750() {
+  @media #{$s750} {
+      @content;
+  }
+}
+
+@mixin responsive_s900() {
+  @media #{$s900} {
+      @content;
+  }
+}
+
+@mixin responsive_s1024() {
+  @media #{$s1024} {
+      @content;
+  }
+}
+
+@mixin responsive_s1060() {
+  @media #{$s1060} {
+      @content;
+  }
+}

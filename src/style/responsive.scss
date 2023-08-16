@@ -1,0 +1,145 @@
+@include responsive_rsHeader() {
+  // HEADER
+  .header__nav {
+    background: $primary-color;
+  }
+
+  .header__menu {
+    display: none !important;
+  }
+
+  .header__menu-mobile {
+    display: flex !important;
+  }
+}
+
+@include responsive_s550() {
+  // HEADER
+  .header__logo {
+    padding-left: 0 !important;
+  }
+
+  // HERO
+  .hero-image h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .hero-content-info {
+    padding: 32px;
+  }
+
+  .hero-content-info h1 {
+    font-size: 52px;
+  }
+
+  .hero-content-info p {
+    margin: 12px 0;
+    font-size: 16px;
+  }
+
+  .hero-content__buttons {
+    margin: 41px 0;
+  }
+
+  .hero-content__testimonial {
+    padding: 32px;
+  }
+
+  // ABOUT US
+  .about-us{
+    min-height: 550px;
+    &__image-sushi2 img,
+    &__image-sushi3 img {
+      width: 75%;
+      height: 160px;
+
+      object-fit: contain;
+    }
+
+    &__image div {
+      padding: 32px;
+    }
+
+    &__button {
+      font-size: 14px;
+      padding: 12px 22px;
+      img {
+        margin-left: 12px;
+      }
+    }
+
+    &__content {
+      padding: 32px;
+
+      .sushi__title {
+        font-size: 32px;
+      }
+      .sushi__description {
+        font-size: 16px;
+      }
+    }
+  }
+  
+}
+
+@include responsive_s750() {
+  // HERO
+  .hero-image h2 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+
+  // ABOUT US
+  .about-us {
+    &__image {
+      flex-direction: column;
+    }
+  
+    &__image-sushi3 {
+      border-bottom: 8px solid $color-creamson;
+      border-right: none;
+    }
+  
+    &__button {
+      display: block;
+      top: 47%;
+    }
+  }
+  
+}
+
+@include responsive_s900() {
+  
+}
+
+@include responsive_s1024() {
+  // ABOUT US
+  .about-us {
+    flex-direction: column;
+  }
+
+  .about-us__image {
+    flex-direction: row;
+  }
+
+  .about-us__image-sushi3 {
+    border-bottom: none;
+    border-right: 8px solid $color-creamson;
+  }
+
+  .about-us__button {
+    display: none;
+  }
+}
+
+@include responsive_s1060() {
+  // HERO
+  .hero {
+    flex-direction: column;
+    &-image img {
+      width: 100%;
+      transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+    }
+  }
+}

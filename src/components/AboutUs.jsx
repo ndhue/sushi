@@ -1,0 +1,30 @@
+import React from 'react'
+import sushi3 from "../assets/sushi-3.png"
+import sushi2 from "../assets/sushi-2.png"
+import arrowUpRight from "../assets/arrow-up-right.svg"
+
+export const AboutUs = () => {
+  return (
+    <section className="about-us" id="about-us">
+      <div className="about-us__image">
+        <div className="about-us__image-sushi3">
+          <img src={sushi3} alt="sushi" />
+        </div>
+        <button className="about-us__button">
+          Learn More
+          <img src={arrowUpRight} alt="learn more" />
+        </button>
+        <div className="about-us__image-sushi2">
+          <img src={sushi2} alt="sushi" />
+        </div>
+      </div>
+      <div className="about-us__content">
+        <p className="sushi__subtitle">About Us / 私たちに関しては</p>
+        <h3 className="sushi__title">Our mission is to bring true Japanese flavours to you.</h3>
+        <p className="sushi__description">We will continue to provide the experience of Omotenashi, the Japanese mindset of hospitality, with our shopping and dining for our customers.
+        </p>
+      </div>
+    </section>
+
+  )
+}
