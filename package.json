@@ -2,7 +2,7 @@
   "name": "sushi-store-landingpage",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ndhue.github.io/sushi-store/",
+  "homepage": "https://ndhue.github.io/sushi-store",
   "type": "module",
   "scripts": {
     "dev": "vite",
