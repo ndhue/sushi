@@ -2,7 +2,7 @@
   "name": "sushi",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://ndhue.github.io/sushi",
+  "homepage": "https://ndhue.github.io/sushi/",
   "type": "module",
   "scripts": {
     "dev": "vite",
